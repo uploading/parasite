@@ -10,7 +10,8 @@
 
 
 @interface PlayersViewController : UIViewController {
-
 }
+
+- (IBAction) showNextView:(id)sender;
 
 @end

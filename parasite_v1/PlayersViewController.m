@@ -7,6 +7,7 @@
 //
 
 #import "PlayersViewController.h"
+#import "PlayersListViewController.h"
 
 
 @implementation PlayersViewController
@@ -50,6 +51,16 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+- (IBAction) showNextView:(id)sender {
+	NSLog(@"showNextView");
+	//creat an instance of PlayerListViewController and load the nib
+	PlayersListViewController *nextView = [[PlayersListViewController alloc] initWithNibName: @"PlayerListViewController" bundle:nil];
+	NSLog(@"navigationController %@", self.navigationController);
+	[self.navigationController pushViewController:nextView animated:YES];
+	// release the controller, navigationController has retained it
+	[nextView release];
 }
 
 
