@@ -19,6 +19,8 @@
 		CBD6C3FE0F64F51300D4875D /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6C3FD0F64F51300D4875D /* MapView.xib */; };
 		CBD6C4000F64F52000D4875D /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6C3FF0F64F52000D4875D /* StatusView.xib */; };
 		CBD6C4020F64F52F00D4875D /* PlayersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6C4010F64F52F00D4875D /* PlayersView.xib */; };
+		CBD6C4240F65049B00D4875D /* PlayersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6C4230F65049B00D4875D /* PlayersListViewController.m */; };
+		CBD6C4260F6504A700D4875D /* PlayersListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6C4250F6504A700D4875D /* PlayersListView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,9 @@
 		CBD6C3FD0F64F51300D4875D /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		CBD6C3FF0F64F52000D4875D /* StatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
 		CBD6C4010F64F52F00D4875D /* PlayersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersView.xib; sourceTree = "<group>"; };
+		CBD6C4220F65049B00D4875D /* PlayersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersListViewController.h; sourceTree = "<group>"; };
+		CBD6C4230F65049B00D4875D /* PlayersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersListViewController.m; sourceTree = "<group>"; };
+		CBD6C4250F6504A700D4875D /* PlayersListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersListView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CBD6C4250F6504A700D4875D /* PlayersListView.xib */,
 				CBD6C3FD0F64F51300D4875D /* MapView.xib */,
 				CBD6C3FF0F64F52000D4875D /* StatusView.xib */,
 				CBD6C4010F64F52F00D4875D /* PlayersView.xib */,
@@ -106,6 +112,8 @@
 				CBD6C3DB0F64F44F00D4875D /* StatusViewController.h */,
 				CBD6C3DC0F64F44F00D4875D /* StatusViewController.m */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				CBD6C4220F65049B00D4875D /* PlayersListViewController.h */,
+				CBD6C4230F65049B00D4875D /* PlayersListViewController.m */,
 				CBD6C3D80F64F41B00D4875D /* MapViewController.h */,
 				CBD6C3D90F64F41B00D4875D /* MapViewController.m */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -169,6 +177,7 @@
 				CBD6C3FE0F64F51300D4875D /* MapView.xib in Resources */,
 				CBD6C4000F64F52000D4875D /* StatusView.xib in Resources */,
 				CBD6C4020F64F52F00D4875D /* PlayersView.xib in Resources */,
+				CBD6C4260F6504A700D4875D /* PlayersListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +193,7 @@
 				CBD6C3DA0F64F41B00D4875D /* MapViewController.m in Sources */,
 				CBD6C3DD0F64F44F00D4875D /* StatusViewController.m in Sources */,
 				CBD6C3E00F64F47800D4875D /* PlayersViewController.m in Sources */,
+				CBD6C4240F65049B00D4875D /* PlayersListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
