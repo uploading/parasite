@@ -56,7 +56,7 @@
 - (IBAction) showNextView:(id)sender {
 	NSLog(@"showNextView");
 	//creat an instance of PlayerListViewController and load the nib
-	PlayersListViewController *nextView = [[PlayersListViewController alloc] initWithNibName: @"PlayerListViewController" bundle:nil];
+	PlayersListViewController *nextView = [[PlayersListViewController alloc] initWithNibName: @"PlayersListView" bundle:nil];
 	NSLog(@"navigationController %@", self.navigationController);
 	[self.navigationController pushViewController:nextView animated:YES];
 	// release the controller, navigationController has retained it

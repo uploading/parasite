@@ -8,8 +8,6 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="13"/>
-			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -34,11 +32,10 @@
 			</object>
 			<object class="IBUICustomObject" id="664661524"/>
 			<object class="IBUIWindow" id="380026005">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">1316</int>
 				<object class="NSPSMatrix" key="NSFrameMatrix"/>
 				<string key="NSFrameSize">{320, 480}</string>
-				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -53,7 +50,6 @@
 				<object class="IBUINavigationController" key="IBUISelectedViewController" id="356688097">
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="704720751">
 						<string key="IBUITitle">Players</string>
-						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIParentViewController" ref="305031176"/>
 					<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -65,14 +61,13 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 					</object>
-					<object class="NSArray" key="IBUIViewControllers">
+					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="IBUIViewController" id="1016149359">
 							<object class="IBUITabBarItem" key="IBUITabBarItem" id="351235526">
 								<string key="IBUITitle">Players</string>
 							</object>
 							<object class="IBUINavigationItem" key="IBUINavigationItem" id="18606469">
-								<reference key="IBUINavigationBar"/>
 								<string key="IBUITitle">Players</string>
 							</object>
 							<reference key="IBUIParentViewController" ref="356688097"/>
@@ -85,7 +80,6 @@
 					<object class="IBUIViewController" id="754582297">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="917092251">
 							<string key="IBUITitle">Map</string>
-							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="305031176"/>
 						<string key="IBUINibName">MapView</string>
@@ -93,12 +87,19 @@
 					<object class="IBUIViewController" id="924757979">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="910570022">
 							<string key="IBUITitle">Status</string>
-							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="305031176"/>
 						<string key="IBUINibName">StatusView</string>
 					</object>
 					<reference ref="356688097"/>
+					<object class="IBUIViewController" id="1011672360">
+						<string key="IBUITitle">test</string>
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="294145305">
+							<string key="IBUITitle">test</string>
+						</object>
+						<reference key="IBUIParentViewController" ref="305031176"/>
+						<string key="IBUINibName">PlayersListView</string>
+					</object>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="900004992">
 					<nil key="NSNextResponder"/>
@@ -184,6 +185,7 @@
 							<reference ref="754582297"/>
 							<reference ref="924757979"/>
 							<reference ref="356688097"/>
+							<reference ref="1011672360"/>
 						</object>
 						<reference key="parent" ref="957960031"/>
 					</object>
@@ -261,6 +263,20 @@
 						<reference key="object" ref="18606469"/>
 						<reference key="parent" ref="1016149359"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">26</int>
+						<reference key="object" ref="1011672360"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="294145305"/>
+						</object>
+						<reference key="parent" ref="305031176"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">27</int>
+						<reference key="object" ref="294145305"/>
+						<reference key="parent" ref="1011672360"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -273,6 +289,7 @@
 					<string>10.IBPluginDependency</string>
 					<string>11.IBPluginDependency</string>
 					<string>12.IBPluginDependency</string>
+					<string>13.CustomClassName</string>
 					<string>13.IBPluginDependency</string>
 					<string>14.IBPluginDependency</string>
 					<string>15.IBPluginDependency</string>
@@ -289,10 +306,11 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>UIApplication</string>
 					<string>UIResponder</string>
-					<string>{{528, 190}, {320, 480}}</string>
+					<string>{{499, 239}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>PlayersViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -334,11 +352,23 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">25</int>
+			<int key="maxID">27</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<object class="IBPartialClassDescription">
+					<string key="className">PlayersViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">showNextView:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">PlayersViewController.h</string>
+					</object>
+				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">parasite_v1AppDelegate</string>
 					<string key="superclassName">NSObject</string>
