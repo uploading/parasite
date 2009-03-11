@@ -92,14 +92,6 @@
 						<string key="IBUINibName">StatusView</string>
 					</object>
 					<reference ref="356688097"/>
-					<object class="IBUIViewController" id="1011672360">
-						<string key="IBUITitle">test</string>
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="294145305">
-							<string key="IBUITitle">test</string>
-						</object>
-						<reference key="IBUIParentViewController" ref="305031176"/>
-						<string key="IBUINibName">PlayersListView</string>
-					</object>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="900004992">
 					<nil key="NSNextResponder"/>
@@ -185,7 +177,6 @@
 							<reference ref="754582297"/>
 							<reference ref="924757979"/>
 							<reference ref="356688097"/>
-							<reference ref="1011672360"/>
 						</object>
 						<reference key="parent" ref="957960031"/>
 					</object>
@@ -262,20 +253,6 @@
 						<int key="objectID">25</int>
 						<reference key="object" ref="18606469"/>
 						<reference key="parent" ref="1016149359"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">26</int>
-						<reference key="object" ref="1011672360"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="294145305"/>
-						</object>
-						<reference key="parent" ref="305031176"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="294145305"/>
-						<reference key="parent" ref="1011672360"/>
 					</object>
 				</object>
 			</object>
