@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface parasite_v1AppDelegate : NSObject {
+@interface parasite_v1AppDelegate : NSObject <UIApplicationDelegate> {
 	IBOutlet UITabBarController		*tabBarController;
+	IBOutlet UITableViewController	*tableViewController;
     UIWindow						*window;
 }
+
+
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 

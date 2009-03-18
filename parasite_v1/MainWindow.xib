@@ -8,6 +8,8 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="28"/>
+			<integer value="23"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -50,6 +52,7 @@
 				<object class="IBUINavigationController" key="IBUISelectedViewController" id="356688097">
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="704720751">
 						<string key="IBUITitle">Players</string>
+						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIParentViewController" ref="305031176"/>
 					<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -68,6 +71,7 @@
 								<string key="IBUITitle">Players</string>
 							</object>
 							<object class="IBUINavigationItem" key="IBUINavigationItem" id="18606469">
+								<reference key="IBUINavigationBar"/>
 								<string key="IBUITitle">Players</string>
 							</object>
 							<reference key="IBUIParentViewController" ref="356688097"/>
@@ -80,6 +84,7 @@
 					<object class="IBUIViewController" id="754582297">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="917092251">
 							<string key="IBUITitle">Map</string>
+							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="305031176"/>
 						<string key="IBUINibName">MapView</string>
@@ -87,6 +92,7 @@
 					<object class="IBUIViewController" id="924757979">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="910570022">
 							<string key="IBUITitle">Status</string>
+							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="305031176"/>
 						<string key="IBUINibName">StatusView</string>
@@ -103,6 +109,28 @@
 					</object>
 					<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				</object>
+			</object>
+			<object class="IBUITableViewController" id="253639727">
+				<object class="IBUITableView" key="IBUIView" id="126122264">
+					<reference key="NSNextResponder"/>
+					<int key="NSvFlags">274</int>
+					<string key="NSFrameSize">{320, 460}</string>
+					<reference key="NSSuperview"/>
+					<object class="NSColor" key="IBUIBackgroundColor">
+						<int key="NSColorSpace">3</int>
+						<bytes key="NSWhite">MQA</bytes>
+					</object>
+					<bool key="IBUIOpaque">NO</bool>
+					<bool key="IBUIClipsSubviews">YES</bool>
+					<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+					<int key="IBUISeparatorStyle">1</int>
+					<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
+					<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
+					<float key="IBUIRowHeight">4.400000e+01</float>
+					<float key="IBUISectionHeaderHeight">2.200000e+01</float>
+					<float key="IBUISectionFooterHeight">2.200000e+01</float>
+				</object>
+				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -131,6 +159,22 @@
 						<reference key="destination" ref="305031176"/>
 					</object>
 					<int key="connectionID">18</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="126122264"/>
+						<reference key="destination" ref="253639727"/>
+					</object>
+					<int key="connectionID">30</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">dataSource</string>
+						<reference key="source" ref="126122264"/>
+						<reference key="destination" ref="253639727"/>
+					</object>
+					<int key="connectionID">31</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -254,6 +298,20 @@
 						<reference key="object" ref="18606469"/>
 						<reference key="parent" ref="1016149359"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">28</int>
+						<reference key="object" ref="253639727"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="126122264"/>
+						</object>
+						<reference key="parent" ref="957960031"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">29</int>
+						<reference key="object" ref="126122264"/>
+						<reference key="parent" ref="253639727"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -276,6 +334,10 @@
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
 					<string>21.IBPluginDependency</string>
+					<string>28.CustomClassName</string>
+					<string>28.IBEditorWindowLastContentRect</string>
+					<string>28.IBPluginDependency</string>
+					<string>29.IBPluginDependency</string>
 					<string>3.CustomClassName</string>
 					<string>3.IBPluginDependency</string>
 				</object>
@@ -287,7 +349,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>PlayersViewController</string>
+					<string>PlayersTableViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -303,6 +365,10 @@
 						</object>
 					</object>
 					<string>{{521, 113}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>PlayersTableViewController</string>
+					<string>{{183, 376}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>parasite_v1AppDelegate</string>
@@ -329,21 +395,17 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">27</int>
+			<int key="maxID">31</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">PlayersViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showNextView:</string>
-						<string key="NS.object.0">id</string>
-					</object>
+					<string key="className">PlayersTableViewController</string>
+					<string key="superclassName">UITableViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">PlayersViewController.h</string>
+						<string key="minorKey">PlayersTableViewController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -354,11 +416,13 @@
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>tabBarController</string>
+							<string>tableViewController</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UITabBarController</string>
+							<string>UITableViewController</string>
 							<string>UIWindow</string>
 						</object>
 					</object>

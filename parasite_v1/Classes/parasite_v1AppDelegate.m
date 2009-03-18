@@ -16,12 +16,13 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
 	[window addSubview:tabBarController.view];
+	[window addSubview:tableViewController.view];
     // Override point for customization after application launch
     [window makeKeyAndVisible];
 }
 
-
 - (void)dealloc {
+	[tableViewController release];
     [window release];
     [super dealloc];
 }

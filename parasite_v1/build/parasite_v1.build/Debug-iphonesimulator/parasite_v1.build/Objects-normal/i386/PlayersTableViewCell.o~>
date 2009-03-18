@@ -1,0 +1,6 @@
+/Users/ephemeralluna/Documents/Spring 09/Little Computers/projects/ObjC/parasite_v1/parasite_v1/PlayersTableViewCell.m: In function '-[PlayersTableViewCell initWithFrame:reuseIdentifier:]':
+/Users/ephemeralluna/Documents/Spring 09/Little Computers/projects/ObjC/parasite_v1/parasite_v1/PlayersTableViewCell.m:17: error: 'name' undeclared (first use in this function)
+/Users/ephemeralluna/Documents/Spring 09/Little Computers/projects/ObjC/parasite_v1/parasite_v1/PlayersTableViewCell.m:17: error: (Each undeclared identifier is reported only once
+/Users/ephemeralluna/Documents/Spring 09/Little Computers/projects/ObjC/parasite_v1/parasite_v1/PlayersTableViewCell.m:17: error: for each function it appears in.)
+/Users/ephemeralluna/Documents/Spring 09/Little Computers/projects/ObjC/parasite_v1/parasite_v1/PlayersTableViewCell.m: In function '-[PlayersTableViewCell setData:]':
+/Users/ephemeralluna/Documents/Spring 09/Little Computers/projects/ObjC/parasite_v1/parasite_v1/PlayersTableViewCell.m:25: error: 'name' undeclared (first use in this function)
